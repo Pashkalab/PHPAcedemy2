@@ -1,0 +1,9 @@
+<h1>My cart</h1>
+
+<?php foreach ($books as $book) : ?>
+    <div>
+        <?=$book['id']?> - $ <?=$book['title']?> 
+        <a href="/?page=books&amp;action=show&amp;id=<?=$book['id']?>">Show</a>
+        <a href="/?page=books&amp;action=delete&amp;id=<?=$book['id']?>">Delete</a>
+    </div>
+<?php endforeach ?>
